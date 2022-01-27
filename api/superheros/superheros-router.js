@@ -4,7 +4,7 @@ const router = require('express').Router()
 router.get('/', (req, res, next) => {
     Super.get()
     .then(supers => {
-        res.json(supers)
+        res.status(200).json(supers)
     })
     .catch(err => {
         next(err)
