@@ -8,22 +8,16 @@ const common = {
 }
 
 module.exports = {
-
   development: {
     ...common,
     connection: {
       filename: './data/superheros.db3'
-    }
+    },
   },
-
   testing: {
     ...common,
     connection: {
       filename: './data/test.db3',
     },
   },
-  production: {
-
-  },
-
 };
